@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Active Users Sidebar -->
+    <div class="sidebar">
+        <h2 class="sidebar-title">Active Users</h2>
+        <ul id="usersList" class="users-list">
+            <!-- Users will be dynamically added here -->
+        </ul>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
     <!-- Toolbar container -->
     <div class="toolbar">
         <!-- Color picker -->
@@ -36,8 +46,12 @@
     <div class="canvas-container">
         <canvas id="drawingCanvas"></canvas>
     </div>
+    </div>
+    <!-- End main content area -->
 
     <!-- Scripts -->
+    <!-- Socket.io client library (CDN) -->
+    <script src="https://cdn.socket.io/4.8.3/socket.io.min.js"></script>
     <script src="canvas.js"></script>
     <script src="main.js"></script>
 </body>
