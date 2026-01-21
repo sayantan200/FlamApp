@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Toolbar container -->
+    <div class="toolbar">
+        <!-- Color picker -->
+        <label for="colorPicker" class="toolbar-item">
+            <span>Color:</span>
+            <input type="color" id="colorPicker" value="#000000">
+        </label>
+
+        <!-- Brush size slider -->
+        <label for="brushSize" class="toolbar-item">
+            <span>Size:</span>
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+            <span id="brushSizeValue">5</span>
+        </label>
+
+        <!-- Eraser button -->
+        <button id="eraserBtn" class="toolbar-item button">Eraser</button>
+
+        <!-- Undo button -->
+        <button id="undoBtn" class="toolbar-item button">Undo</button>
+
+        <!-- Redo button -->
+        <button id="redoBtn" class="toolbar-item button">Redo</button>
+    </div>
+
+    <!-- Canvas container -->
+    <div class="canvas-container">
+        <canvas id="drawingCanvas"></canvas>
+    </div>
+
+    <!-- Scripts -->
+    <script src="canvas.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
